@@ -49,20 +49,20 @@ export const UserFormData = () => {
        
         let regex = new RegExp("([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\"\(\[\]!#-[^-~ \t]|(\\[\t -~]))+\")@([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\[[\t -Z^-~]*])");
 
-        function ValidateEmail(inputText){
+//         function ValidateEmail(inputText){
           
-var mailformat =  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-if(inputText.match(mailformat))
-{
+// var mailformat =  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+// if(inputText.match(mailformat))
+// {
 
-return true;
-}
-else
-{
+// return true;
+// }
+// else
+// {
 
-return false;
-}
-}
+// return false;
+// }
+// }
 
        
         if(values.username==""){
@@ -71,11 +71,11 @@ return false;
        if(values.email==""){
         error.email="Email is required"
        } 
-        if( !ValidateEmail(values.email)){
+      //   if( !ValidateEmail(values.email)){
        
-          error.email="enter vaild mail"
+      //     error.email="enter vaild mail"
         
-       }
+      //  }
        
        if(values.password==""){
         error.password="Password is required"
